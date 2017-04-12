@@ -3,14 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 
 
-class Square extends React.Component {
-  render() {
+function Square(props) {
     return (
-      <button className="square">
-        {this.props.value}
+      <button className="square" onClick={() => props.onClick()}>
+        {props.value}
       </button>
     );
-  }
+
 }
 
 export default Square;
